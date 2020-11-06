@@ -1,5 +1,8 @@
 import * as sequelize from 'sequelize';
 
+// sequelize.Sequelize
+
+
 interface EggTsSequelizeOptions extends sequelize.Options {
   /**
    * load all models to `app[delegate]` and `ctx[delegate]`, default to `model`
@@ -29,7 +32,7 @@ interface Clients {
 }
 
 declare module 'egg' {
-  interface IModel extends sequelize.Sequelize, PlainObject {}
+  interface IModel extends sequelize.Model, PlainObject {}
 
   // extend app
   interface Application {
@@ -44,6 +47,6 @@ declare module 'egg' {
 
   // extend your config
   interface EggAppConfig {
-    tsSequelize: EggSequelizeOptions | Clients;
+    tsSequelize: EggTsSequelizeOptions | Clients;
   }
 }
