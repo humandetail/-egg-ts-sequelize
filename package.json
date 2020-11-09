@@ -1,6 +1,6 @@
 {
   "name": "@humandetail/egg-ts-sequelize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "egg typescript sequelize",
   "eggPlugin": {
     "name": "tsSequelize"

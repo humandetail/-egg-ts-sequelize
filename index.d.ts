@@ -1,7 +1,5 @@
+import 'egg';
 import * as sequelize from 'sequelize';
-
-// sequelize.Sequelize
-
 
 interface EggTsSequelizeOptions extends sequelize.Options {
   /**
@@ -33,7 +31,6 @@ interface Clients {
 
 declare module 'egg' {
   interface IModel extends sequelize.Model, PlainObject {}
-
   // extend app
   interface Application {
     Sequelize: typeof sequelize;

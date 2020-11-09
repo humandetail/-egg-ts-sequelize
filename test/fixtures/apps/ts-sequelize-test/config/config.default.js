@@ -7,4 +7,5 @@ exports.tsConfig = {
   host: 'localhost',
   username: 'root',
   password: 'root',
+  database: 'test'
 };
