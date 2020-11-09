@@ -2,10 +2,10 @@
 
 exports.keys = '123456';
 
-exports.tsConfig = {
+exports.tsSequelize = {
   dialect: 'mysql',
   host: 'localhost',
   username: 'root',
   password: 'root',
-  database: 'test'
+  database: 'test',
 };

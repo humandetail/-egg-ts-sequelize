@@ -1,6 +1,6 @@
 {
   "name": "@humandetail/egg-ts-sequelize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "egg typescript sequelize",
   "eggPlugin": {
     "name": "tsSequelize"
@@ -40,10 +40,10 @@
     "autod": "autod"
   },
   "files": [
-    "app",
     "config",
     "app.js",
     "lib",
+    "utils",
     "index.d.ts"
   ],
   "types": "./index.d.ts",
